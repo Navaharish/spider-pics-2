@@ -851,7 +851,7 @@ li {
     display: none;
     position: fixed;
     z-index: 1;
-    background-color: rgb(79, 82, 255);
+    background: linear-gradient(to right, #fd7ca4, #9a73f4);
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -877,7 +877,7 @@ li {
     color: black;
   }
   .header-menu.slide li .btn-primary {
-    background-color: rgb(162, 6, 162);
+    background-color: rgb(79, 82, 255);
     padding: 1rem 2rem;
     border-radius: 8px;
   }
@@ -887,7 +887,7 @@ li {
     display: none;
     position: fixed;
     z-index: 1;
-    background-color: rgb(79, 82, 255);
+    background: linear-gradient(to right, #fd7ca4, #9a73f4);
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -913,7 +913,7 @@ li {
     color: black;
   }
   .header-menu.slide li .btn-primary {
-    background-color: rgb(162, 6, 162);
+    background-color: rgb(79, 82, 255);
     padding: 1rem 2rem;
     border-radius: 8px;
   }
@@ -923,7 +923,7 @@ li {
     display: none;
     position: fixed;
     z-index: 1;
-    background-color: rgb(79, 82, 255);
+    background: linear-gradient(to right, #fd7ca4, #9a73f4);
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -949,7 +949,7 @@ li {
     color: black;
   }
   .header-menu.slide li .btn-primary {
-    background-color: rgb(162, 6, 162);
+    background-color: rgb(79, 82, 255);
     padding: 1rem 2rem;
     border-radius: 8px;
   }
@@ -983,53 +983,47 @@ li {
 .header-menu--link.active {
   color: rgb(79, 82, 255);
 }
-.header--bars {
+.header .header--bars {
   display: none;
 }
 @media only screen and (max-width: 576px) {
-  .header--bars {
+  .header .header--bars {
     display: flex;
     font-size: 2rem;
-    font-weight: 100;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .header--bars {
+  .header .header--bars {
     display: flex;
     font-size: 2rem;
-    font-weight: 100;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .header--bars {
+  .header .header--bars {
     display: flex;
     font-size: 2rem;
-    font-weight: 100;
   }
 }
-.header--tites {
+.header .header--tites {
   display: none;
   text-align: end;
 }
 @media only screen and (max-width: 576px) {
-  .header--tites {
+  .header .header--tites {
     display: flex;
     font-size: 2rem;
-    font-weight: 100;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .header--tites {
+  .header .header--tites {
     display: flex;
     font-size: 2rem;
-    font-weight: 100;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .header--tites {
+  .header .header--tites {
     display: flex;
     font-size: 2rem;
-    font-weight: 100;
   }
 }
 .header.navbar-fixed {
@@ -1442,7 +1436,7 @@ main .box1 {
   height: 10px;
   border-radius: 30px 0px;
   left: 18%;
-  bottom: 17%;
+  bottom: 12%;
   animation: box-rotate linear 7s infinite;
   transform: rotate(0deg);
 }
@@ -1546,7 +1540,7 @@ main .box1 {
   height: 10px;
   border-radius: 0 10px 50px;
   right: 18%;
-  bottom: 15%;
+  bottom: 12%;
   animation: box-rotate linear 5s infinite;
   transform: rotate(0deg);
 }

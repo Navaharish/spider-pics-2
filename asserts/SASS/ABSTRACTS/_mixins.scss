@@ -69,7 +69,8 @@
 
     position: fixed;
     z-index: 1;
-    background-color: func.theme-colors();
+    background: linear-gradient(to right, #fd7ca4, #9a73f4);
+
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -98,7 +99,7 @@
             }
 
             .btn-primary {
-                background-color: rgb(162, 6, 162);
+                background-color: func.theme-colors();
                 padding: 1rem 2rem;
                 border-radius: 8px;
             }

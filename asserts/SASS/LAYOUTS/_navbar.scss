@@ -174,50 +174,44 @@
 
 
 
-    &--bars {
+    .header--bars {
         display: none;
 
         @include mixins.responsive(xs) {
             display: flex;
             font-size: 2rem;
-            font-weight: 100;
 
         }
 
         @include mixins.responsive(sm) {
             display: flex;
             font-size: 2rem;
-            font-weight: 100;
         }
 
         @include mixins.responsive(md) {
             display: flex;
             font-size: 2rem;
-            font-weight: 100;
         }
     }
 
-    &--tites {
+    .header--tites {
         display: none;
         text-align: end;
 
         @include mixins.responsive(xs) {
             display: flex;
             font-size: 2rem;
-            font-weight: 100;
 
         }
 
         @include mixins.responsive(sm) {
             display: flex;
             font-size: 2rem;
-            font-weight: 100;
         }
 
         @include mixins.responsive(md) {
             display: flex;
             font-size: 2rem;
-            font-weight: 100;
         }
     }
 
