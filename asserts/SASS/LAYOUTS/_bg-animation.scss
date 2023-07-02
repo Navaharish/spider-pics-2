@@ -1,0 +1,250 @@
+@use"../ABSTRACTS/mixins";
+
+.bg-animation {
+    @include mixins.responsive(xs) {
+        display: none;
+    }
+
+}
+
+main .box1 {
+    position: absolute;
+    border: 3px solid blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    left: 5%;
+    top: 20%;
+    animation: box-rotate linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+        top: 25%;
+    }
+
+    @include mixins.responsive(lg) {
+
+        top: 25%;
+        left: 2%;
+    }
+}
+
+
+.box2 {
+    position: absolute;
+    border: 3px solid red;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    right: 5%;
+    top: 30%;
+    animation: box-rotate linear 5s infinite;
+}
+
+.box-3 {
+
+    position: absolute;
+    border: 3px solid orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    right: 50%;
+    bottom: 10%;
+    animation: box-rotate linear 5s infinite;
+    transform: rotate(0deg);
+
+    @include mixins.responsive(sm) {
+        bottom: -50%;
+        right: 10%;
+    }
+
+    @include mixins.responsive(md) {
+        bottom: -40%;
+        right: 10%;
+    }
+
+    @include mixins.responsive(lg) {
+        bottom: -5%;
+    }
+
+    @include mixins.responsive(xl) {
+        bottom: -5%;
+    }
+
+    @include mixins.responsive(xxl) {
+        bottom: 10%;
+    }
+}
+
+.leaf-1 {
+    position: absolute;
+    border: 3px solid green;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px 0px;
+    left: 18%;
+    bottom: 17%;
+    animation: box-rotate linear 7s infinite;
+    transform: rotate(0deg);
+
+    @include mixins.responsive(sm) {
+        bottom: -10%;
+    }
+
+    @include mixins.responsive(md) {
+        bottom: -30%;
+        left: 10%;
+    }
+
+    @include mixins.responsive(lg) {
+        bottom: 0%;
+    }
+
+    @include mixins.responsive(xl) {
+        bottom: -12%;
+    }
+
+    @include mixins.responsive(xxl) {
+        bottom: 17%;
+    }
+}
+
+.leaf-2 {
+    position: absolute;
+    border: 3px solid blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px 0px;
+    top: 15%;
+    left: 45%;
+    animation: box-rotate linear 7s infinite;
+    transform: rotate(0deg);
+
+    @include mixins.responsive(sm) {
+        top: 20%;
+    }
+
+    @include mixins.responsive(md) {
+        top: 18%;
+    }
+
+    @include mixins.responsive(lg) {
+        top: 20%;
+    }
+
+    @include mixins.responsive(xl) {
+        top: 20%;
+    }
+
+    @include mixins.responsive(xxl) {
+        top: 15%;
+    }
+}
+
+.cone1 {
+    position: absolute;
+    border: 3px solid red;
+    width: 10px;
+    height: 10px;
+    border-radius: 0 10px 100px;
+    left: 5%;
+    bottom: 55%;
+    animation: box-rotate linear 5s infinite;
+    transform: rotate(0deg);
+
+    @include mixins.responsive(sm) {
+        bottom: -55%;
+    }
+
+    @include mixins.responsive(lg) {
+        bottom: 45%;
+        left: 2%;
+    }
+
+    @include mixins.responsive(xl) {
+        bottom: 45%;
+        left: 2%;
+    }
+}
+
+.cone2 {
+    position: absolute;
+    border: 3px solid #f4284a;
+    width: 10px;
+    height: 10px;
+    border-radius: 0 10px 50px;
+    right: 18%;
+    bottom: 15%;
+    animation: box-rotate linear 5s infinite;
+    transform: rotate(0deg);
+
+    @include mixins.responsive(sm) {
+        bottom: -10%;
+        right: 10%;
+    }
+
+    @include mixins.responsive(md) {
+        bottom: 5%;
+    }
+
+    @include mixins.responsive(lg) {
+        bottom: 10%;
+    }
+
+    @include mixins.responsive(xl) {
+        bottom: -10%;
+    }
+
+    @include mixins.responsive(xxl) {
+        bottom: 15%;
+    }
+}
+
+.dot1 {
+    position: absolute;
+    top: 66%;
+    left: 6%;
+    width: 8px;
+    height: 8px;
+    background-color: #3f43fd;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(xl) {
+        top: 87%;
+    }
+}
+
+
+.dot2 {
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+    width: 8px;
+    height: 8px;
+    background-color: #f4284a;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(xl) {
+        bottom: 30%;
+    }
+}
+
+
+
+.dot3 {
+    position: absolute;
+    top: 90%;
+    left: 43%;
+    width: 8px;
+    height: 8px;
+    background-color: #f4284a;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+}

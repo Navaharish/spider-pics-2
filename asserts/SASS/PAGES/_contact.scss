@@ -1,0 +1,94 @@
+@use"../ABSTRACTS/function" as func;
+
+@use"../ABSTRACTS/mixins" as mixins;
+
+.contact {
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem 10rem;
+    align-items: center;
+
+    @include mixins.responsive(xs) {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        margin: 0rem 0rem;
+        align-items: start;
+    }
+
+    @include mixins.responsive(sm) {
+        flex-direction: column;
+        padding: 1rem 6rem;
+    }
+
+    @include mixins.responsive(md) {
+        flex-direction: column;
+        padding: 1rem 6rem;
+    }
+
+    @include mixins.responsive(lg) {
+        padding: 5rem 3rem;
+    }
+
+    @include mixins.responsive(xl) {
+        padding: 5rem 5rem;
+    }
+
+    &-img {
+        width: 50%;
+        height: auto;
+        padding-bottom: 7rem;
+
+        @include mixins.responsive(xs) {
+            width: 80%;
+            padding: 0rem 1rem;
+        }
+
+        @include mixins.responsive(sm) {
+            width: 100%;
+            padding: 0rem 0rem;
+        }
+
+        @include mixins.responsive(md) {
+            width: 80%;
+            padding: 0rem 0rem;
+            margin-bottom: 2rem;
+            margin-top: -2rem;
+        }
+    }
+
+    &-details {
+        box-shadow: 10px 10px 8px 10px #888888;
+        margin-bottom: 100px;
+        margin-top: 20px;
+
+        @include mixins.responsive(xs) {
+            width: 90%;
+            padding: 0rem 0rem;
+
+
+        }
+    }
+
+    &-detail {
+        box-shadow: 10px 10px 8px 10px #888888;
+        padding: 30px;
+        border-radius: 3px;
+        margin: 40px 30px;
+
+        @include mixins.responsive(xs) {
+            padding: 15px;
+            margin: 40px 20px;
+
+            & a {
+                color: #23397b;
+            }
+        }
+
+        &:hover {
+            box-shadow: 15px 15px 10px 12px #888888;
+        }
+    }
+}
