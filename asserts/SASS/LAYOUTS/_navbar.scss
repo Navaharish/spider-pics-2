@@ -90,8 +90,8 @@
 
 
         &--logo {
-            width: 110px;
-            height: 80px;
+            width: 60%;
+            height: 50%;
 
             @include mixins.responsive(xs) {
                 width: 80px;
