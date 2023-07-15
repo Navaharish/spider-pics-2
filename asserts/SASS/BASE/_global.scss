@@ -1,12 +1,11 @@
 @use"../ABSTRACTS/function" as func;
 
 @use"../ABSTRACTS/mixins" as mixins;
-
-@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .text-center {
@@ -39,47 +38,6 @@ body {
     color: grey;
 }
 
-.form-control {
-    display: block;
-    padding: 1rem 6rem;
-
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    border: 1px solid #888888;
-    outline: none;
-
-
-    @include mixins.responsive(xs) {
-        padding: 1rem 15%;
-
-    }
-
-    @include mixins.responsive(sm) {
-        padding: 1rem 4rem;
-        margin-bottom: 1rem;
-    }
-
-    @include mixins.responsive(md) {
-        padding: 1rem 6rem;
-        margin-bottom: 1rem;
-    }
-
-    @include mixins.responsive(lg) {
-        padding: 1rem 15%;
-        margin-bottom: 1rem;
-    }
-
-    @include mixins.responsive(xl) {
-        padding: 1rem 15%;
-
-    }
-
-    &:hover {
-        border: 1px solid func.theme-colors();
-        box-shadow: 5px 5px 4px 5px #888888;
-    }
-
-}
 
 .no-resize {
     resize: none;
@@ -94,4 +52,12 @@ body {
     color: red;
     margin-right: 1px;
     margin-top: 1px;
+}
+
+.line {
+    width: 20rem;
+    height: 5px;
+    border-radius: 10px;
+    margin: 35px auto;
+    background: linear-gradient(to right, #fd7ca4, blue);
 }

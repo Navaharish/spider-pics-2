@@ -18,7 +18,7 @@
         color: white;
         word-spacing: 6px;
         font-weight: 600;
-
+        text-decoration: none;
     }
 
     &:hover {
@@ -46,8 +46,6 @@
         background-color: func.theme-colors();
         border-radius: 5px;
         padding: 12px 20px;
-
-
         color: white;
 
     }
@@ -55,23 +53,22 @@
 
 //btn-outline-hover-primary
 .btn-outline-hover-primary {
-    background-color: func.theme-colors();
-    border-radius: 5px;
-    padding: 15px 20px;
-    line-height: 1;
-    transition: 0.5s;
+
+
     color: white;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.8s;
+    min-height: 6.5em !important;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f48a35, #eb5810);
+
+
 
     &:hover {
-        padding: 13px 20px;
-        border: 2px solid func.theme-colors();
-        color: func.theme-colors();
-        border-radius: 5px;
-        font-weight: 600;
-        background-color: transparent;
+        color: white;
+        background: linear-gradient(to right, #f48a35, #eb5810);
+
 
     }
 }
