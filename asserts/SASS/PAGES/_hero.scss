@@ -1,12 +1,12 @@
+@use"../ABSTRACTS/function" as func;
 @use"../ABSTRACTS/mixins" as mixins;
 
 .hero {
 
-    display: flex;
+    align-items: center;
+
 
     @include mixins.responsive(xs) {
-        flex-direction: column-reverse;
-        padding: 6rem 0rem;
         width: 100%;
         text-align: center;
 
@@ -14,76 +14,33 @@
 
     @include mixins.responsive(sm) {
         text-align: center;
-        padding: 10rem 5rem 2rem 5rem;
-        flex-direction: column-reverse;
     }
 
     @include mixins.responsive(md) {
         text-align: center;
-        padding: 8rem 6rem 2rem 6rem;
-        flex-direction: column-reverse;
 
     }
 
-    @include mixins.responsive(lg) {
-        padding: 6rem 8rem;
+    @include mixins.responsive(lg) {}
+
+    @include mixins.responsive(xl) {}
+
+}
+
+.carousel-caption {
+    h1 {
+        color: func.theme-colors();
+        overflow: hidden;
     }
 
-    @include mixins.responsive(xl) {
-        padding: 8rem 8rem 4rem 8rem;
+    h3 {
+        color: black;
+        text-decoration: underline;
+        overflow: hidden;
+
     }
 
-
-    &-carosels {
-        height: 100vh;
-
-        & input {
-            display: none;
-        }
-
-        & .carosel img {
-
-            width: 100%;
-
-            z-index: -1;
-            display: flex;
-            transition: 2s;
-        }
-    }
-
-    &.navigation-btn {
-        display: flex;
-        position: absolute;
-        justify-content: center;
-
-        & .manual-btn {
-            padding: 5px;
-            border-radius: 10px;
-            border: 2px solid blue;
-            cursor: pointer;
-            transition: 1s;
-            background-color: blue;
-        }
-
-        &.manual-btn:not(:last-child) {
-            margin-right: 10px;
-        }
-    }
-
-    .carousel-inner {
-        background: linear-gradient(to right, black, black) !important;
-    }
-
-    .carousel-caption {
-        background-color: grey, opacify($color: #000000, $amount: 0.5);
-
-
-        & h3 {
-            text-decoration: underline;
-        }
-
-        & p {
-            color: white;
-        }
+    p {
+        color: black;
     }
 }

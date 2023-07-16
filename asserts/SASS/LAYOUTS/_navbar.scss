@@ -8,12 +8,13 @@
 .header {
     position: fixed;
     width: 100%;
+    height: 10%;
     z-index: 5;
+    overflow: hidden;
 
     background-color: white;
     justify-content: space-around;
     display: flex;
-    line-height: 1;
     align-items: center;
     border-bottom: 2px solid #e9e9e9;
 
@@ -47,6 +48,7 @@
     &-brand {
         display: flex;
         align-items: center;
+        font-size: 18px;
 
 
         @include mixins.responsive(xs) {
@@ -68,6 +70,7 @@
             font-weight: 800;
             line-height: 1;
             overflow-y: hidden;
+            color: grey;
 
             @include mixins.responsive(xs) {
                 font-size: 1.5rem;
@@ -75,23 +78,17 @@
                 margin-left: 0.5rem;
             }
 
-            .color-animation {
-                margin-left: 0.1rem;
-                animation: color-change 5s infinite;
-                transition: 500ms;
-
-                @include mixins.responsive(xs) {
-                    display: none;
-                }
-
-                @include mixins.responsive(sm) {}
+            & span {
+                display: block;
+                color: func.theme-colors();
+                overflow: hidden;
             }
         }
 
 
         &--logo {
-            width: 60%;
-            height: 50%;
+            width: 100px;
+            height: 80px;
 
             @include mixins.responsive(xs) {
                 width: 80px;
@@ -115,7 +112,7 @@
     //nav-menus
     &-menu {
         display: flex;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         align-items: center;
 
@@ -158,7 +155,7 @@
         }
 
         &--link {
-            color: darkslateblue;
+            color: black;
             padding: 0px 7px;
 
             @include mixins.responsive(lg) {
@@ -174,44 +171,26 @@
 
 
 
-    .header--bars {
+    .nav-icon {
         display: none;
+        overflow-y: hidden;
 
         @include mixins.responsive(xs) {
             display: flex;
             font-size: 2rem;
-
+            overflow: hidden;
         }
 
         @include mixins.responsive(sm) {
             display: flex;
             font-size: 2rem;
+            overflow: hidden;
         }
 
         @include mixins.responsive(md) {
             display: flex;
             font-size: 2rem;
-        }
-    }
-
-    .header--tites {
-        display: none;
-        text-align: end;
-
-        @include mixins.responsive(xs) {
-            display: flex;
-            font-size: 2rem;
-
-        }
-
-        @include mixins.responsive(sm) {
-            display: flex;
-            font-size: 2rem;
-        }
-
-        @include mixins.responsive(md) {
-            display: flex;
-            font-size: 2rem;
+            overflow: hidden;
         }
     }
 

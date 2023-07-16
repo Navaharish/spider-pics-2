@@ -1,7 +1,5 @@
 //utilities
-
 @use"../SASS/UTILITIES/spacing";
-@use"../SASS/UTILITIES/animation";
 
 //BASE
 
@@ -29,26 +27,16 @@
 
 @use"../SASS/LAYOUTS/forms";
 
+
+
+
+
 //PAGES
 
 @use"../SASS/PAGES/hero";
 
-@use"../SASS/PAGES/Card";
+@use"../SASS/PAGES/whatWeDo";
 
 @use"../SASS/PAGES/service";
 
 @use"../SASS/PAGES/contact";
-@use"../SASS/PAGES/summary";
-
-
-//VENDOR
-
-@use"../SASS/VENDOR/bootstrap";
-
-a {
-    text-decoration: none;
-}
-
-.Active {
-    color: darkorange;
-}

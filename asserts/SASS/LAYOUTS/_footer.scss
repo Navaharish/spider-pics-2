@@ -2,7 +2,7 @@
 @use"../ABSTRACTS/mixins" as mixins;
 
 footer {
-    background-color: func.theme-colors(dark);
+    background-color: func.theme-colors();
     color: #fff;
     padding: 2rem 5rem;
     line-height: 2;
@@ -42,7 +42,6 @@ footer {
 
     & h1 {
         font-weight: 400;
-        overflow: hidden;
 
         @include mixins.responsive(xs) {
             font-size: 18px;

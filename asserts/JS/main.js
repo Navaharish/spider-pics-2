@@ -2,6 +2,7 @@ const navToggler = document.querySelector(".nav-toggler");
 const navLinks = document.querySelectorAll(".header-menu>li>a");
 const navLinkBtn = document.querySelector(".header-menu>li>.btn-primary");
 
+console.log(navLinkBtn);
 navToggler.addEventListener("click", changeMenuState);
 
 function changeMenuState() {
@@ -10,7 +11,6 @@ function changeMenuState() {
 
     // Show menu programatically
     headerMenu.classList.toggle("slide");
-    console.log(navIcon)
 
     navIcon.forEach((icon) => {
         icon.classList.toggle("hidden");
@@ -57,6 +57,7 @@ function setMenuActive() {
 }
 
 function onMenuClick() {
+    console.log(navLinks);
 
     for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].addEventListener("click", changeMenuState);
