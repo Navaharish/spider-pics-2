@@ -1,0 +1,48 @@
+@use"../ABSTRACTS/function" as func;
+
+.summary {
+    margin-left: 3rem;
+
+    & h3 {
+        overflow: hidden;
+    }
+
+    &-service {
+        margin-left: 5rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    &-about {
+        max-width: 700px;
+        line-height: 2.5;
+    }
+
+    &-info {
+        a {
+            text-decoration: none;
+            font-size: 23px;
+            color: func.theme-colors(dark);
+        }
+    }
+}
+
+.box {
+    width: 150px;
+    height: 60px;
+
+    padding: 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.391);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.4s, transform 0.4s;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+
+}
+
+.box:hover {
+    box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}

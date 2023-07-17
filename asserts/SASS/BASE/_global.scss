@@ -1,0 +1,57 @@
+@use"../ABSTRACTS/function" as func;
+
+@use"../ABSTRACTS/mixins" as mixins;
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.fs-2 {
+    font-size: 1.5rem;
+}
+
+.primary-badge {
+    background-color: func.theme-colors();
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 6px;
+
+}
+
+.disable {
+    color: grey;
+}
+
+
+
+.no-resize {
+    resize: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.fa-envelope {
+    font-size: 23px;
+    color: red;
+    margin-right: 1px;
+    margin-top: 1px;
+}

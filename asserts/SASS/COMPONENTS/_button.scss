@@ -1,0 +1,67 @@
+@use"../ABSTRACTS/function" as func;
+@use"../ABSTRACTS/variable" as var;
+@use"../ABSTRACTS/mixins" as mixins;
+
+//header-btn
+.btn-primary {
+    background-color: func.theme-colors();
+    border-radius: 5px;
+    padding: 12px 24px;
+    line-height: 1;
+    transition: 0.5s;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+
+    a {
+        color: white;
+        word-spacing: 6px;
+        font-weight: 600;
+
+    }
+
+    &:hover {
+        background-color: func.theme-colors(primary-hover);
+
+
+    }
+
+}
+
+//btn-utline-primary
+
+.btn-outline-primary {
+    padding: 12px 20px;
+    border: 2px solid func.theme-colors();
+    color: func.theme-colors();
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 2px;
+    line-height: 1.8;
+
+    &:hover {
+        background-color: func.theme-colors();
+        border-radius: 5px;
+        padding: 12px 20px;
+
+
+        color: white;
+
+    }
+}
+
+//btn-outline-hover-primary
+.btn-outline-hover-primary {
+    min-height: 6.5em !important;
+    border-radius: 10px;
+    background: linear-gradient(to right, func.theme-colors(), #0037ff);
+    color: white;
+    padding: 2rem 0rem;
+
+    &:hover {
+        color: white;
+    }
+}
