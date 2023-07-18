@@ -26,6 +26,29 @@
             color: func.theme-colors(dark);
         }
     }
+
+    &-icon {
+        align-items: center;
+        justify-content: center;
+
+
+        &-name {
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 1;
+            overflow-y: hidden;
+            color: grey;
+
+            & span {
+                color: func.theme-colors();
+                overflow: hidden;
+                display: block;
+            }
+        }
+
+
+
+    }
 }
 
 .box {

@@ -638,6 +638,7 @@ li {
   color: white;
   word-spacing: 6px;
   font-weight: 600;
+  text-decoration: none;
 }
 .btn-primary:hover {
   background-color: #0062d1;
@@ -774,6 +775,7 @@ li {
   font-size: 16px;
   font-weight: 600;
   align-items: center;
+  text-decoration: none;
 }
 @media only screen and (max-width: 576px) {
   .header-menu {
@@ -903,6 +905,7 @@ li {
 .header-menu--link {
   color: black;
   padding: 0px 7px;
+  text-decoration: none;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-menu--link {
@@ -949,7 +952,7 @@ li {
 }
 
 footer {
-  background-color: #00a0ea;
+  background-color: #018ed0;
   color: #fff;
   padding: 2rem 5rem;
   line-height: 2;
@@ -1416,6 +1419,22 @@ footer a:hover {
   text-decoration: none;
   font-size: 23px;
   color: #273647;
+}
+.summary-icon {
+  align-items: center;
+  justify-content: center;
+}
+.summary-icon-name {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1;
+  overflow-y: hidden;
+  color: grey;
+}
+.summary-icon-name span {
+  color: #00a0ea;
+  overflow: hidden;
+  display: block;
 }
 
 .box {

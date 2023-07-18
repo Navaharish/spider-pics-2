@@ -47,10 +47,10 @@ function setMenuActive() {
         });
 
         navLinks.forEach((li) => {
-            li.classList.remove("active");
+            li.classList.remove("Active");
 
             if (current == li.getAttribute("href").split("#")[1]) {
-                li.classList.add("active");
+                li.classList.add("Active");
             }
         });
     });
