@@ -5,7 +5,7 @@
 
 .about-area {
 
-    padding: 2rem 2rem;
+    margin-top: 2rem;
 
     @include mixins.responsive(xs) {
         flex-direction: column;
@@ -26,9 +26,51 @@
 
     @include mixins.responsive(xl) {}
 
+    & h2 {
+        margin-top: 2rem;
+        font-weight: 800;
+        font-size: 70px;
+        text-align: center;
+        overflow: hidden;
+
+        @include mixins.responsive(xs) {
+            font-weight: 700;
+            font-size: 40px;
+        }
+    }
+
+    & .line {
+        width: 25rem;
+        height: 5px;
+        border-radius: 10px;
+        margin: 35px auto;
+        background: linear-gradient(to right, #fd7ca4, blue);
+
+        @include mixins.responsive(xs) {
+            width: 10rem;
+            height: 5px;
+            margin: 20px auto;
+        }
+    }
+
     .card {
+        border-radius: 10px;
+        padding: 1rem 1rem 0rem;
+        margin: 2rem 0rem;
         background: linear-gradient(to right, #fd7ca4, #9a73f4);
         color: white;
-        margin: 1rem;
+        background-color: #ccc;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+
+
+    .card-body {
+
+        margin-top: 1rem;
     }
 }

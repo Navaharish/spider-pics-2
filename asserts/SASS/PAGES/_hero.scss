@@ -5,11 +5,10 @@
 
     align-items: center;
 
-
     @include mixins.responsive(xs) {
         width: 100%;
         text-align: center;
-
+        margin-top: 5rem;
     }
 
     @include mixins.responsive(sm) {
@@ -27,20 +26,59 @@
 
 }
 
+.carousel {
+    @include mixins.responsive(xl) {
+        margin-top: 5rem;
+
+    }
+}
+
 .carousel-caption {
     h1 {
-        color: func.theme-colors();
+        color: #fff;
         overflow: hidden;
     }
 
     h3 {
-        color: black;
+        color: func.theme-colors();
         text-decoration: underline;
         overflow: hidden;
 
     }
 
     p {
+        color: #fff;
+    }
+
+    .carousel-control-prev {
+        background-color: black;
         color: black;
+
+        &:hover {
+            background-color: inherit;
+        }
+    }
+
+    button.carousel-control-next {
+        background-color: black;
+
+        &:hover {
+            background-color: inherit;
+        }
+    }
+}
+
+.carousel-item {
+    @include mixins.responsive(xl) {
+        height: 100vh;
+    }
+
+    & img {
+        background: linear-gradient(to right, black, black);
+
+        @include mixins.responsive(xl) {
+            height: 2060px;
+
+        }
     }
 }

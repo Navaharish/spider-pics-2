@@ -2,7 +2,7 @@
 @use"../ABSTRACTS/mixins" as mixins;
 
 footer {
-    background-color: func.theme-colors();
+    background-color: #018ed0;
     color: #fff;
     padding: 2rem 5rem;
     line-height: 2;
@@ -26,12 +26,14 @@ footer {
         width: 100%;
         text-align: center;
         padding: 2rem 0rem;
+        font-size: 20px;
     }
 
     @include mixins.responsive(lg) {
         width: 100%;
         text-align: center;
         padding: 2rem 0rem;
+        font-size: 20px;
     }
 
     @include mixins.responsive(xl) {
@@ -42,9 +44,11 @@ footer {
 
     & h1 {
         font-weight: 400;
+        overflow: hidden;
 
         @include mixins.responsive(xs) {
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: 700;
         }
 
         @include mixins.responsive(sm) {
@@ -53,14 +57,22 @@ footer {
 
         @include mixins.responsive(md) {
             font-size: 28px;
+            font-weight: 700;
         }
 
         @include mixins.responsive(lg) {
             font-size: 25px;
+            font-weight: 700;
         }
 
         @include mixins.responsive(xl) {
             font-size: 25px;
+        }
+    }
+
+    & p {
+        @include mixins.responsive(xs) {
+            font-size: 18px;
         }
     }
 
@@ -70,6 +82,14 @@ footer {
         &:hover {
             color: #fff;
             text-decoration: underline;
+        }
+    }
+
+    .copy-right {
+        @include mixins.responsive(xs) {
+            padding: 0 1rem;
+            word-wrap: break-word;
+            font-size: 18px;
         }
     }
 }

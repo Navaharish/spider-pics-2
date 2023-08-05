@@ -39,47 +39,7 @@ body {
     color: grey;
 }
 
-.form-control {
-    display: block;
-    padding: 1rem 6rem;
 
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    border: 1px solid #888888;
-    outline: none;
-
-
-    @include mixins.responsive(xs) {
-        padding: 1rem 15%;
-
-    }
-
-    @include mixins.responsive(sm) {
-        padding: 1rem 4rem;
-        margin-bottom: 1rem;
-    }
-
-    @include mixins.responsive(md) {
-        padding: 1rem 6rem;
-        margin-bottom: 1rem;
-    }
-
-    @include mixins.responsive(lg) {
-        padding: 1rem 15%;
-        margin-bottom: 1rem;
-    }
-
-    @include mixins.responsive(xl) {
-        padding: 1rem 15%;
-
-    }
-
-    &:hover {
-        border: 1px solid func.theme-colors();
-        box-shadow: 5px 5px 4px 5px #888888;
-    }
-
-}
 
 .no-resize {
     resize: none;

@@ -19,19 +19,18 @@
     border-bottom: 2px solid #e9e9e9;
 
     @include mixins.responsive(xs) {
-        padding: 1rem 0px;
+        padding: 2.5rem 0px;
         justify-content: space-around;
-
     }
 
     @include mixins.responsive(sm) {
-        padding: 1rem 0rem;
+        padding: 2.5rem 0rem;
         justify-content: space-around;
     }
 
     @include mixins.responsive(lg) {
         justify-content: space-evenly;
-        padding: 1rem 0rem;
+        padding: 2.5rem 0rem;
     }
 
 
@@ -49,10 +48,9 @@
         display: flex;
         align-items: center;
         font-size: 18px;
-
+        overflow: hidden;
 
         @include mixins.responsive(xs) {
-
             text-align: start;
         }
 
@@ -66,7 +64,7 @@
 
         &--name {
             margin-left: 1rem;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 800;
             line-height: 1;
             overflow-y: hidden;
@@ -80,8 +78,13 @@
 
             & span {
                 display: block;
+                font-size: 18px;
                 color: func.theme-colors();
                 overflow: hidden;
+
+                @include mixins.responsive(xs) {
+                    font-size: 10px;
+                }
             }
         }
 
@@ -115,6 +118,7 @@
         font-size: 16px;
         font-weight: 600;
         align-items: center;
+        text-decoration: none;
 
 
 
@@ -157,6 +161,8 @@
         &--link {
             color: black;
             padding: 0px 7px;
+            text-decoration: none;
+
 
             @include mixins.responsive(lg) {
                 padding: 0px 5px;
@@ -205,4 +211,7 @@
         z-index: 999;
     }
 
+    .hidden {
+        display: none;
+    }
 }
