@@ -1676,7 +1676,12 @@ footer a:hover {
 }
 @media only screen and (max-width: 576px) {
   .Photo-editing-header p {
-    font-size: 28px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Photo-editing-header p {
+    font-size: 30px;
   }
 }
 .Photo-editing .PE-img1 {
@@ -1685,6 +1690,11 @@ footer a:hover {
 @media only screen and (max-width: 576px) {
   .Photo-editing .PE-img1 {
     height: 500px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Photo-editing .PE-img1 {
+    height: 600px;
   }
 }
 
@@ -1729,8 +1739,12 @@ footer a:hover {
 }
 @media only screen and (max-width: 576px) {
   .Twilight img, .HDR img, .object-rm img, .flash img {
-    width: 100%;
     height: 300px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Twilight img, .HDR img, .object-rm img, .flash img {
+    height: 400px;
   }
 }
 
@@ -1796,9 +1810,20 @@ footer a:hover {
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .price-list-header h2 {
+    font-size: 50px;
+    color: blue;
+  }
+}
 .price-list-header p {
   font-size: 40px;
   letter-spacing: 1px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .price-list-header p {
+    color: blue;
+  }
 }
 .price-list-body {
   display: flex;
@@ -1817,6 +1842,11 @@ footer a:hover {
   overflow-y: hidden;
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .price-list-body h2 {
+    font-size: 20px;
+  }
 }
 .price-list-body span {
   font-size: 35px;

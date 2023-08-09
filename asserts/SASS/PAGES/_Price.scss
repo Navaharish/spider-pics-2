@@ -23,11 +23,22 @@
             overflow-y: hidden;
             font-weight: 700;
             font-family: Georgia, 'Times New Roman', Times, serif;
+
+            @include mixins.responsive(lg) {
+                font-size: 50px;
+                color: blue;
+
+            }
         }
 
         & p {
             font-size: 40px;
             letter-spacing: 1px;
+
+            @include mixins.responsive(lg) {
+                color: blue;
+
+            }
         }
     }
 
@@ -48,6 +59,10 @@
             overflow-y: hidden;
             font-weight: 700;
             font-family: Georgia, 'Times New Roman', Times, serif;
+
+            @include mixins.responsive(lg) {
+                font-size: 20px;
+            }
         }
 
         & span {
