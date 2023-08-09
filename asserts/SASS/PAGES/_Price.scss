@@ -1,3 +1,6 @@
+@use"../ABSTRACTS/function" as func;
+@use"../ABSTRACTS/mixins" as mixins;
+
 .price-list {
     margin-top: 5rem;
 
@@ -9,6 +12,9 @@
         margin-top: 10rem;
         line-height: 3;
 
+        @include mixins.responsive(xs) {
+            display: none;
+        }
 
 
         & h2 {
@@ -30,6 +36,10 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 10rem;
+
+        @include mixins.responsive(xs) {
+            display: none;
+        }
 
 
         & h2 {
@@ -105,6 +115,11 @@
             margin-bottom: 1rem;
             margin-left: 2.5rem;
             transition: 0.5s all;
+
+            @include mixins.responsive(xs) {
+                margin-left: 2rem;
+                border-radius: 2px;
+            }
 
             &:hover {
                 border-radius: 15px;

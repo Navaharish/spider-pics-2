@@ -7,6 +7,10 @@
     &-header {
         margin-left: 5rem;
 
+        @include mixins.responsive(xs) {
+            margin-left: 1rem;
+        }
+
         & .service-line {
             width: 140px;
             height: 4px;
@@ -22,6 +26,66 @@
         & p {
             font-size: 38px;
             letter-spacing: 1px;
+
+            @include mixins.responsive(xs) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .PE-img1 {
+        height: 850px;
+
+        @include mixins.responsive(xs) {
+            height: 500px
+        }
+
+    }
+}
+
+.Twilight {
+    &-header {
+        margin-left: 5rem;
+
+        @include mixins.responsive(xs) {
+            margin-left: 1rem;
+        }
+    }
+
+    & .service-line {
+        width: 180px;
+        height: 4px;
+        background: func.theme-colors();
+        margin-bottom: 3rem;
+        margin-left: 5rem;
+
+        @include mixins.responsive(xs) {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            width: 200px;
+        }
+    }
+
+    & P {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+
+        @include mixins.responsive(xs) {
+            font-size: 20px;
+            margin-top: 3rem;
+            margin-left: 10px;
+
+        }
+
+    }
+
+    & img {
+        height: 600px;
+
+        @include mixins.responsive(xs) {
+            height: 300px
         }
     }
 
@@ -30,103 +94,48 @@
 .HDR {
     &-header {
         margin-left: 5rem;
+
+        @include mixins.responsive(xs) {
+            margin-left: 1rem;
+        }
     }
 
-    & .service-line {
-        width: 180px;
-        height: 4px;
-        background: func.theme-colors();
-        margin-bottom: 3rem;
-        margin-left: 5rem;
+    @extend .Twilight;
 
-    }
-
-    & P {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 38px;
-        letter-spacing: 1px;
-        margin-top: 5rem;
-
-    }
-}
-
-.Twilight {
-    &-header {
-        margin-left: 5rem;
-    }
-
-    & .service-line {
-        width: 180px;
-        height: 4px;
-        background: func.theme-colors();
-        margin-bottom: 3rem;
-        margin-left: 5rem;
-
-    }
-
-    & P {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 38px;
-        letter-spacing: 1px;
-        margin-top: 5rem;
-
-    }
 }
 
 .object-rm {
     &-header {
         margin-left: 5rem;
+
+        @include mixins.responsive(xs) {
+            margin-left: 1rem;
+        }
     }
 
-    & .service-line {
-        width: 180px;
-        height: 4px;
-        background: func.theme-colors();
-        margin-bottom: 3rem;
-        margin-left: 10rem;
-
-    }
-
-    & P {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 38px;
-        letter-spacing: 1px;
-        margin-top: 5rem;
-
-    }
+    @extend .HDR;
 
     & img {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include mixins.responsive(xs) {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
 .flash {
     &-header {
         margin-left: 5rem;
+
+        @include mixins.responsive(xs) {
+            margin-left: 1rem;
+        }
     }
 
-    & .service-line {
-        width: 180px;
-        height: 4px;
-        background: func.theme-colors();
-        margin-bottom: 3rem;
-        margin-left: 2rem;
-
-    }
-
-    & P {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 38px;
-        letter-spacing: 1px;
-        margin-top: 5rem;
-
-    }
-
-    & img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    @extend .object-rm;
 }
