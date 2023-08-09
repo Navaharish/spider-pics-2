@@ -9,7 +9,7 @@
     position: fixed;
     width: 100%;
     height: 10%;
-    z-index: 5;
+    z-index: 2;
     overflow: hidden;
 
     background-color: white;
@@ -208,10 +208,41 @@
         width: 100%;
         background-color: #fff;
         box-shadow: 1px 1px 2px 0 #e6e6e6;
-        z-index: 999;
+        z-index: 2;
     }
 
     .hidden {
         display: none;
     }
+}
+
+//dropdown menu css
+/* Reset default list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-Content {
+    width: 100px;
+    height: 580px;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dropdown content items */
+.dropdown-Content li {
+    padding: 10px;
+}
+
+.dropdown-menu {
+    z-index: 10;
 }

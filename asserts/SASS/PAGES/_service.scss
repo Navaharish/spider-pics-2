@@ -1,0 +1,132 @@
+@use"../ABSTRACTS/function" as func;
+@use"../ABSTRACTS/mixins" as mixins;
+
+.Photo-editing {
+    margin-top: 7rem;
+
+    &-header {
+        margin-left: 5rem;
+
+        & .service-line {
+            width: 140px;
+            height: 4px;
+            background: func.theme-colors();
+            margin-bottom: 0.5rem;
+        }
+
+        & h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 1px;
+        }
+
+        & p {
+            font-size: 38px;
+            letter-spacing: 1px;
+        }
+    }
+
+}
+
+.HDR {
+    &-header {
+        margin-left: 5rem;
+    }
+
+    & .service-line {
+        width: 180px;
+        height: 4px;
+        background: func.theme-colors();
+        margin-bottom: 3rem;
+        margin-left: 5rem;
+
+    }
+
+    & P {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+
+    }
+}
+
+.Twilight {
+    &-header {
+        margin-left: 5rem;
+    }
+
+    & .service-line {
+        width: 180px;
+        height: 4px;
+        background: func.theme-colors();
+        margin-bottom: 3rem;
+        margin-left: 5rem;
+
+    }
+
+    & P {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+
+    }
+}
+
+.object-rm {
+    &-header {
+        margin-left: 5rem;
+    }
+
+    & .service-line {
+        width: 180px;
+        height: 4px;
+        background: func.theme-colors();
+        margin-bottom: 3rem;
+        margin-left: 10rem;
+
+    }
+
+    & P {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+
+    }
+
+    & img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.flash {
+    &-header {
+        margin-left: 5rem;
+    }
+
+    & .service-line {
+        width: 180px;
+        height: 4px;
+        background: func.theme-colors();
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+
+    }
+
+    & P {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+
+    }
+
+    & img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

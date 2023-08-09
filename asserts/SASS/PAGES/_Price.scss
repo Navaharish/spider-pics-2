@@ -1,0 +1,124 @@
+.price-list {
+    margin-top: 5rem;
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10rem;
+        line-height: 3;
+
+
+
+        & h2 {
+            font-size: 100px;
+            color: rgb(96, 96, 96);
+            overflow-y: hidden;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        & p {
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+    }
+
+    &-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10rem;
+
+
+        & h2 {
+            font-size: 60px;
+            color: rgb(96, 96, 96);
+            overflow-y: hidden;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        & span {
+            font-size: 35px;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+            color: rgb(27, 27, 27);
+        }
+
+        & p {
+            font-size: 30px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+
+        }
+    }
+}
+
+
+.pricing {
+    margin-top: 8rem;
+
+    &-card {
+        margin: 1rem;
+        border: 2px black solid;
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        &_header {
+            background-color: rgb(71, 71, 71);
+            color: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            text-align: center;
+
+            & h3 {
+                overflow-y: hidden;
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            & i {
+                font-size: 58px;
+            }
+        }
+
+        &_body {
+            overflow: hidden;
+            margin-top: 5rem;
+            text-align: center;
+
+            & h3 {
+                overflow-y: hidden;
+            }
+        }
+
+        & button {
+            background-color: royalblue;
+            padding: 1rem 2rem;
+            width: 80%;
+            margin-bottom: 1rem;
+            margin-left: 2.5rem;
+            transition: 0.5s all;
+
+            &:hover {
+                border-radius: 15px;
+                background-color: rgb(26, 188, 26);
+            }
+
+            & a {
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+        }
+    }
+}
