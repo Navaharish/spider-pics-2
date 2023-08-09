@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 .m-1 {
   margin: 1rem;
 }
@@ -634,12 +635,14 @@ li {
   font-weight: 600;
   cursor: pointer;
 }
+
 .btn-primary a {
   color: white;
   word-spacing: 6px;
   font-weight: 600;
   text-decoration: none;
 }
+
 .btn-primary:hover {
   background-color: #0062d1;
 }
@@ -655,6 +658,7 @@ li {
   font-size: 2px;
   line-height: 1.8;
 }
+
 .btn-outline-primary:hover {
   background-color: #00a0ea;
   border-radius: 5px;
@@ -669,11 +673,13 @@ li {
   color: white;
   padding: 2rem 0rem;
 }
+
 @media only screen and (max-width: 576px) {
   .btn-outline-hover-primary {
     min-height: 0;
   }
 }
+
 .btn-outline-hover-primary:hover {
   color: white;
 }
@@ -690,50 +696,59 @@ li {
   align-items: center;
   border-bottom: 2px solid #e9e9e9;
 }
+
 @media only screen and (max-width: 576px) {
   .header {
     padding: 2.5rem 0px;
     justify-content: space-around;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header {
     padding: 2.5rem 0rem;
     justify-content: space-around;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header {
     justify-content: space-evenly;
     padding: 2.5rem 0rem;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .header {
     justify-content: space-evenly;
   }
 }
+
 .header-brand {
   display: flex;
   align-items: center;
   font-size: 18px;
   overflow: hidden;
 }
+
 @media only screen and (max-width: 576px) {
   .header-brand {
     text-align: start;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header-brand {
     padding-right: 6rem;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-brand {
     padding-right: 3rem;
   }
 }
+
 .header-brand--name {
   margin-left: 1rem;
   font-size: 20px;
@@ -742,6 +757,7 @@ li {
   overflow-y: hidden;
   color: grey;
 }
+
 @media only screen and (max-width: 576px) {
   .header-brand--name {
     font-size: 1.5rem;
@@ -749,39 +765,46 @@ li {
     margin-left: 0.5rem;
   }
 }
+
 .header-brand--name span {
   display: block;
   font-size: 18px;
   color: #00a0ea;
   overflow: hidden;
 }
+
 @media only screen and (max-width: 576px) {
   .header-brand--name span {
     font-size: 10px;
   }
 }
+
 .header-brand--logo {
   width: 100px;
   height: 80px;
 }
+
 @media only screen and (max-width: 576px) {
   .header-brand--logo {
     width: 80px;
     height: 55px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header-brand--logo {
     width: 90px;
     height: 60px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-brand--logo {
     width: 80px;
     height: 55px;
   }
 }
+
 .header-menu {
   display: flex;
   font-size: 16px;
@@ -789,6 +812,7 @@ li {
   align-items: center;
   text-decoration: none;
 }
+
 @media only screen and (max-width: 576px) {
   .header-menu {
     display: none;
@@ -801,33 +825,40 @@ li {
     top: 80px;
     opacity: 1;
   }
+
   .header-menu.slide {
     display: block;
     text-align: center;
     padding-top: 2rem;
     transition: 0.5ms;
   }
+
   .header-menu.slide li {
     padding: 2rem;
     text-align: center;
   }
+
   .header-menu.slide li a {
     color: white;
     text-transform: uppercase;
     text-align: center;
   }
+
   .header-menu.slide li a .active {
     color: black;
   }
+
   .header-menu.slide li .btn-primary {
     background-color: rgb(214, 212, 212);
     padding: 1rem 2rem;
     border-radius: 8px;
   }
+
   .header-menu.slide li .btn-primary a {
     color: rgb(33, 33, 199);
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header-menu {
     display: none;
@@ -840,33 +871,40 @@ li {
     top: 80px;
     opacity: 1;
   }
+
   .header-menu.slide {
     display: block;
     text-align: center;
     padding-top: 2rem;
     transition: 0.5ms;
   }
+
   .header-menu.slide li {
     padding: 2rem;
     text-align: center;
   }
+
   .header-menu.slide li a {
     color: white;
     text-transform: uppercase;
     text-align: center;
   }
+
   .header-menu.slide li a .active {
     color: black;
   }
+
   .header-menu.slide li .btn-primary {
     background-color: rgb(214, 212, 212);
     padding: 1rem 2rem;
     border-radius: 8px;
   }
+
   .header-menu.slide li .btn-primary a {
     color: rgb(33, 33, 199);
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .header-menu {
     display: none;
@@ -879,67 +917,82 @@ li {
     top: 80px;
     opacity: 1;
   }
+
   .header-menu.slide {
     display: block;
     text-align: center;
     padding-top: 2rem;
     transition: 0.5ms;
   }
+
   .header-menu.slide li {
     padding: 2rem;
     text-align: center;
   }
+
   .header-menu.slide li a {
     color: white;
     text-transform: uppercase;
     text-align: center;
   }
+
   .header-menu.slide li a .active {
     color: black;
   }
+
   .header-menu.slide li .btn-primary {
     background-color: rgb(214, 212, 212);
     padding: 1rem 2rem;
     border-radius: 8px;
   }
+
   .header-menu.slide li .btn-primary a {
     color: rgb(33, 33, 199);
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-menu {
     padding-left: 0rem;
   }
 }
+
 .header-menu li a .btn-primary {
   padding: 2rem;
 }
+
 .header-menu--item {
   margin-right: 17px;
   overflow-y: hidden;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-menu--item {
     margin-right: 7px;
   }
 }
+
 .header-menu--link {
   color: black;
   padding: 0px 7px;
   text-decoration: none;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-menu--link {
     padding: 0px 5px;
   }
 }
+
 .header-menu--link.active {
   color: #00a0ea;
 }
+
 .header .nav-icon {
   display: none;
   overflow-y: hidden;
 }
+
 @media only screen and (max-width: 576px) {
   .header .nav-icon {
     display: flex;
@@ -947,6 +1000,7 @@ li {
     overflow: hidden;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header .nav-icon {
     display: flex;
@@ -954,6 +1008,7 @@ li {
     overflow: hidden;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .header .nav-icon {
     display: flex;
@@ -961,6 +1016,7 @@ li {
     overflow: hidden;
   }
 }
+
 .header.navbar-fixed {
   position: fixed;
   top: -1px;
@@ -971,6 +1027,7 @@ li {
   box-shadow: 1px 1px 2px 0 #e6e6e6;
   z-index: 2;
 }
+
 .header .hidden {
   display: none;
 }
@@ -1012,6 +1069,7 @@ footer {
   padding: 1rem 20rem;
   font-size: 16px;
 }
+
 @media only screen and (max-width: 576px) {
   footer {
     width: 100%;
@@ -1019,6 +1077,7 @@ footer {
     padding: 2rem 0rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   footer {
     width: 100%;
@@ -1026,6 +1085,7 @@ footer {
     padding: 2rem 0rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   footer {
     width: 100%;
@@ -1034,6 +1094,7 @@ footer {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   footer {
     width: 100%;
@@ -1042,6 +1103,7 @@ footer {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   footer {
     width: 100%;
@@ -1049,50 +1111,60 @@ footer {
     padding: 2rem 0rem;
   }
 }
+
 footer h1 {
   font-weight: 400;
   overflow: hidden;
 }
+
 @media only screen and (max-width: 576px) {
   footer h1 {
     font-size: 20px;
     font-weight: 700;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   footer h1 {
     font-size: 23px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   footer h1 {
     font-size: 28px;
     font-weight: 700;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   footer h1 {
     font-size: 25px;
     font-weight: 700;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   footer h1 {
     font-size: 25px;
   }
 }
+
 @media only screen and (max-width: 576px) {
   footer p {
     font-size: 18px;
   }
 }
+
 footer a {
   color: #fff;
 }
+
 footer a:hover {
   color: #fff;
   text-decoration: underline;
 }
+
 @media only screen and (max-width: 576px) {
   footer .copy-right {
     padding: 0 1rem;
@@ -1106,64 +1178,76 @@ footer a:hover {
   padding: 5rem 10rem;
   margin-top: 5rem;
 }
+
 @media only screen and (max-width: 576px) {
   .register {
     padding: 2rem 1rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .register {
     padding: 4rem 3rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .register {
     padding: 4rem 5rem;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .register {
     padding: 4rem;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .register {
     padding: 4rem 6rem;
   }
 }
+
 .register-card {
   background-color: #fff;
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 10px 10px 5px 5px rgba(245, 245, 245, 0.253);
 }
+
 @media only screen and (max-width: 576px) {
   .register-card {
     flex-direction: column-reverse;
     padding: 0px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .register-card {
     flex-direction: column-reverse;
     padding: 2rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .register-card {
     flex-direction: column-reverse;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .register-card {
     padding: 3rem 0rem 3rem 3rem;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .register-card {
     padding: 3rem 0rem 3rem 3rem;
   }
 }
+
 .register-card h2 {
   font-size: 2rem;
   overflow: hidden;
@@ -1172,6 +1256,7 @@ footer a:hover {
   margin-bottom: 2rem;
   font-weight: bolder;
 }
+
 @media only screen and (max-width: 576px) {
   .register-card h2 {
     padding: 1rem 2rem 0rem;
@@ -1179,41 +1264,49 @@ footer a:hover {
     margin-bottom: 2rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .register-card h2 {
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .register-card h2 {
     text-align: center;
     margin-top: 2rem;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .register-card h2 {
     margin-bottom: 10px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .register-card h2 {
     margin-bottom: 10px;
   }
 }
+
 .register-card--form {
   text-align: left;
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 576px) {
   .register-card--form {
     padding: 1rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .register-card--form {
     padding-left: 2rem;
   }
 }
+
 .register-card--form button {
   width: 20%;
   height: 115px;
@@ -1224,6 +1317,7 @@ footer a:hover {
   color: white;
   padding: 2rem 0rem;
 }
+
 @media only screen and (max-width: 576px) {
   .register-card--form button {
     display: flex;
@@ -1236,12 +1330,14 @@ footer a:hover {
     overflow: hidden;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .register-card--form button {
     width: 100px;
     height: 100px;
   }
 }
+
 .register-end {
   width: 100%;
   height: 7px;
@@ -1256,24 +1352,28 @@ footer a:hover {
   outline: none;
   font-size: 18px;
 }
+
 @media only screen and (max-width: 576px) {
   .form-Control {
     padding: 0.5rem 1rem;
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .form-Control {
     padding: 1rem 4rem;
     margin-bottom: 1rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .form-Control {
     padding: 0.5rem 6rem;
     margin-bottom: 1rem;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .form-Control {
     width: 275px;
@@ -1281,15 +1381,18 @@ footer a:hover {
     margin-bottom: 1rem;
   }
 }
+
 .form-Control:hover {
   border: 1px solid #00a0ea;
   box-shadow: 5px 5px 4px 5px #888888;
 }
+
 .form-Control-end {
   width: 100%;
   height: 10px;
   background-color: #00a0ea;
 }
+
 .form-Control-textarea {
   display: block;
   padding: 1rem;
@@ -1301,17 +1404,20 @@ footer a:hover {
   border: 1px solid hsl(0, 1%, 37%);
   outline: none;
 }
+
 @media only screen and (max-width: 576px) {
   .form-Control-textarea {
     width: 100%;
     height: 115px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .form-Control-textarea {
     height: 110px;
   }
 }
+
 .form-Control-textarea:hover {
   border: 1px solid #00a0ea;
   box-shadow: 5px 5px 4px 5px #888888;
@@ -1320,6 +1426,7 @@ footer a:hover {
 .hero {
   align-items: center;
 }
+
 @media only screen and (max-width: 576px) {
   .hero {
     width: 100%;
@@ -1327,16 +1434,19 @@ footer a:hover {
     margin-top: 5rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .hero {
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .hero {
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .carousel {
     margin-top: 5rem;
@@ -1347,24 +1457,30 @@ footer a:hover {
   color: #fff;
   overflow: hidden;
 }
+
 .carousel-caption h3 {
   color: #00a0ea;
   text-decoration: underline;
   overflow: hidden;
 }
+
 .carousel-caption p {
   color: #fff;
 }
+
 .carousel-caption .carousel-control-prev {
   background-color: black;
   color: black;
 }
+
 .carousel-caption .carousel-control-prev:hover {
   background-color: inherit;
 }
+
 .carousel-caption button.carousel-control-next {
   background-color: black;
 }
+
 .carousel-caption button.carousel-control-next:hover {
   background-color: inherit;
 }
@@ -1374,9 +1490,11 @@ footer a:hover {
     height: 100vh;
   }
 }
+
 .carousel-item img {
   background: linear-gradient(to right, black, black);
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .carousel-item img {
     height: 2060px;
@@ -1386,24 +1504,28 @@ footer a:hover {
 .about-area {
   margin-top: 2rem;
 }
+
 @media only screen and (max-width: 576px) {
   .about-area {
     flex-direction: column;
     margin-top: 0rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .about-area {
     flex-direction: column;
     margin-top: 0rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .about-area {
     flex-direction: column;
     margin-top: 0rem;
   }
 }
+
 .about-area h2 {
   margin-top: 2rem;
   font-weight: 800;
@@ -1411,12 +1533,14 @@ footer a:hover {
   text-align: center;
   overflow: hidden;
 }
+
 @media only screen and (max-width: 576px) {
   .about-area h2 {
     font-weight: 700;
     font-size: 40px;
   }
 }
+
 .about-area .line {
   width: 25rem;
   height: 5px;
@@ -1424,6 +1548,7 @@ footer a:hover {
   margin: 35px auto;
   background: linear-gradient(to right, #fd7ca4, blue);
 }
+
 @media only screen and (max-width: 576px) {
   .about-area .line {
     width: 10rem;
@@ -1431,6 +1556,7 @@ footer a:hover {
     margin: 20px auto;
   }
 }
+
 .about-area .card {
   border-radius: 10px;
   padding: 1rem 1rem 0rem;
@@ -1440,9 +1566,11 @@ footer a:hover {
   background-color: #ccc;
   transition: transform 0.3s ease;
 }
+
 .about-area .card:hover {
   transform: translateY(-10px);
 }
+
 .about-area .card-body {
   margin-top: 1rem;
 }
@@ -1453,6 +1581,7 @@ footer a:hover {
   padding: 1rem 10rem;
   align-items: center;
 }
+
 @media only screen and (max-width: 576px) {
   .contact {
     flex-direction: column;
@@ -1462,45 +1591,53 @@ footer a:hover {
     align-items: start;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .contact {
     flex-direction: column;
     padding: 1rem 6rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .contact {
     flex-direction: column;
     padding: 1rem 6rem;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .contact {
     padding: 5rem 3rem;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .contact {
     padding: 5rem 5rem;
   }
 }
+
 .contact-img {
   width: 50%;
   height: auto;
   padding-bottom: 7rem;
 }
+
 @media only screen and (max-width: 576px) {
   .contact-img {
     width: 80%;
     padding: 0rem 1rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .contact-img {
     width: 100%;
     padding: 0rem 0rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .contact-img {
     width: 80%;
@@ -1509,32 +1646,38 @@ footer a:hover {
     margin-top: -2rem;
   }
 }
+
 .contact-details {
   box-shadow: 10px 10px 8px 10px #888888;
   margin-bottom: 100px;
   margin-top: 20px;
 }
+
 @media only screen and (max-width: 576px) {
   .contact-details {
     width: 90%;
     padding: 0rem 0rem;
   }
 }
+
 .contact-detail {
   box-shadow: 10px 10px 8px 10px #888888;
   padding: 30px;
   border-radius: 3px;
   margin: 40px 30px;
 }
+
 @media only screen and (max-width: 576px) {
   .contact-detail {
     padding: 15px;
     margin: 40px 20px;
   }
+
   .contact-detail a {
     color: #23397b;
   }
 }
+
 .contact-detail:hover {
   box-shadow: 15px 15px 10px 12px #888888;
 }
@@ -1542,15 +1685,18 @@ footer a:hover {
 .summary {
   margin-left: 3rem;
 }
+
 @media only screen and (max-width: 576px) {
   .summary {
     margin-left: 0.5rem;
     margin-top: 2rem;
   }
 }
+
 .summary h3 {
   overflow: hidden;
 }
+
 .summary-service {
   margin-left: 5rem;
   display: flex;
@@ -1558,47 +1704,57 @@ footer a:hover {
   align-items: center;
   margin: 0;
 }
+
 @media only screen and (max-width: 576px) {
   .summary-service {
     margin-left: 0rem;
   }
 }
+
 .summary-service .row [class^=col] {
   padding: 0;
 }
+
 .summary-service * {
   margin: 0;
 }
+
 .summary-about {
   max-width: 700px;
   line-height: 2.5;
 }
+
 .summary-info a {
   text-decoration: none;
   font-size: 23px;
   color: #273647;
 }
+
 .summary-info a:hover {
   color: #00a0ea;
 }
+
 .summary-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 @media only screen and (max-width: 576px) {
   .summary-icon-logo img {
     width: 200px;
     height: 180px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .summary-icon-logo img {
     width: 200px;
     height: 180px;
   }
 }
+
 .summary-icon-name {
   font-size: 38px;
   font-weight: 800;
@@ -1606,6 +1762,7 @@ footer a:hover {
   overflow-y: hidden;
   color: grey;
 }
+
 @media only screen and (max-width: 576px) {
   .summary-icon-name {
     font-size: 28px;
@@ -1614,6 +1771,7 @@ footer a:hover {
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .summary-icon-name {
     font-size: 35px;
@@ -1622,6 +1780,7 @@ footer a:hover {
     text-align: center;
   }
 }
+
 .summary-icon-name span {
   color: #00a0ea;
   overflow: hidden;
@@ -1639,6 +1798,7 @@ footer a:hover {
   margin: 0rem 0;
   border-radius: 8px;
 }
+
 @media only screen and (max-width: 576px) {
   .box {
     width: 100%;
@@ -1653,19 +1813,23 @@ footer a:hover {
 .Photo-editing {
   margin-top: 7rem;
 }
+
 .Photo-editing-header {
   margin-left: 5rem;
 }
+
 .Photo-editing-header .service-line {
   width: 140px;
   height: 4px;
   background: #00a0ea;
   margin-bottom: 0.5rem;
 }
+
 .Photo-editing-header h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   letter-spacing: 1px;
 }
+
 .Photo-editing-header p {
   font-size: 38px;
   letter-spacing: 1px;
@@ -1674,6 +1838,7 @@ footer a:hover {
 .HDR-header {
   margin-left: 5rem;
 }
+
 .HDR .service-line {
   width: 180px;
   height: 4px;
@@ -1681,6 +1846,7 @@ footer a:hover {
   margin-bottom: 3rem;
   margin-left: 5rem;
 }
+
 .HDR P {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 38px;
@@ -1691,6 +1857,7 @@ footer a:hover {
 .Twilight-header {
   margin-left: 5rem;
 }
+
 .Twilight .service-line {
   width: 180px;
   height: 4px;
@@ -1698,6 +1865,7 @@ footer a:hover {
   margin-bottom: 3rem;
   margin-left: 5rem;
 }
+
 .Twilight P {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 38px;
@@ -1708,6 +1876,7 @@ footer a:hover {
 .object-rm-header {
   margin-left: 5rem;
 }
+
 .object-rm .service-line {
   width: 180px;
   height: 4px;
@@ -1715,12 +1884,14 @@ footer a:hover {
   margin-bottom: 3rem;
   margin-left: 10rem;
 }
+
 .object-rm P {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 38px;
   letter-spacing: 1px;
   margin-top: 5rem;
 }
+
 .object-rm img {
   display: flex;
   justify-content: center;
@@ -1730,6 +1901,7 @@ footer a:hover {
 .flash-header {
   margin-left: 5rem;
 }
+
 .flash .service-line {
   width: 180px;
   height: 4px;
@@ -1737,12 +1909,14 @@ footer a:hover {
   margin-bottom: 3rem;
   margin-left: 2rem;
 }
+
 .flash P {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 38px;
   letter-spacing: 1px;
   margin-top: 5rem;
 }
+
 .flash img {
   display: flex;
   justify-content: center;
@@ -1752,6 +1926,7 @@ footer a:hover {
 .price-list {
   margin-top: 5rem;
 }
+
 .price-list-header {
   display: flex;
   justify-content: center;
@@ -1760,6 +1935,7 @@ footer a:hover {
   margin-top: 10rem;
   line-height: 3;
 }
+
 .price-list-header h2 {
   font-size: 100px;
   color: rgb(96, 96, 96);
@@ -1767,16 +1943,19 @@ footer a:hover {
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .price-list-header p {
   font-size: 40px;
   letter-spacing: 1px;
 }
+
 .price-list-body {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10rem;
 }
+
 .price-list-body h2 {
   font-size: 60px;
   color: rgb(96, 96, 96);
@@ -1784,12 +1963,14 @@ footer a:hover {
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .price-list-body span {
   font-size: 35px;
   letter-spacing: 1px;
   margin-top: 1rem;
   color: rgb(27, 27, 27);
 }
+
 .price-list-body p {
   font-size: 30px;
   margin-bottom: 10px;
@@ -1802,12 +1983,14 @@ footer a:hover {
 .pricing {
   margin-top: 8rem;
 }
+
 .pricing-card {
   margin: 1rem;
   border: 2px black solid;
   border-radius: 20px;
   overflow: hidden;
 }
+
 .pricing-card_header {
   background-color: rgb(71, 71, 71);
   color: #fff;
@@ -1815,22 +1998,27 @@ footer a:hover {
   padding: 2rem;
   text-align: center;
 }
+
 .pricing-card_header h3 {
   overflow-y: hidden;
   font-size: 28px;
   font-weight: 700;
 }
+
 .pricing-card_header i {
   font-size: 58px;
 }
+
 .pricing-card_body {
   overflow: hidden;
   margin-top: 5rem;
   text-align: center;
 }
+
 .pricing-card_body h3 {
   overflow-y: hidden;
 }
+
 .pricing-card button {
   background-color: royalblue;
   padding: 1rem 2rem;
@@ -1839,14 +2027,18 @@ footer a:hover {
   margin-left: 2.5rem;
   transition: 0.5s all;
 }
+
 .pricing-card button:hover {
   border-radius: 15px;
   background-color: rgb(26, 188, 26);
 }
+
 .pricing-card button a {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
