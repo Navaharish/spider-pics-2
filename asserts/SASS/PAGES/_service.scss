@@ -82,9 +82,11 @@
     }
 
     & img {
+        width: 100%;
         height: 600px;
 
         @include mixins.responsive(xs) {
+            width: 100%;
             height: 300px
         }
     }
@@ -119,11 +121,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
         @include mixins.responsive(xs) {
-            width: 300px;
-            display: flex;
-            justify-content: space-between;
+            width: 100%;
+            height: 350px;
+
         }
     }
 }
