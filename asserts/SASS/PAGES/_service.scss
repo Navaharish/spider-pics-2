@@ -16,6 +16,10 @@
             height: 4px;
             background: func.theme-colors();
             margin-bottom: 0.5rem;
+
+            @include mixins.responsive(xs) {
+                width: 115px;
+            }
         }
 
         & h2 {
@@ -28,7 +32,7 @@
             letter-spacing: 1px;
 
             @include mixins.responsive(xs) {
-                font-size: 20px;
+                font-size: 25px;
             }
 
             @include mixins.responsive(lg) {
@@ -37,17 +41,6 @@
         }
     }
 
-    .PE-img1 {
-        height: 850px;
-
-        @include mixins.responsive(xs) {
-            height: 500px
-        }
-
-        @include mixins.responsive(lg) {
-            height: 600px
-        }
-    }
 }
 
 .Twilight {
@@ -89,17 +82,14 @@
     }
 
     & img {
-        width: 100%;
-        height: 600px;
-
         @include mixins.responsive(xs) {
-            height: 300px
+            display: flex;
+
+            justify-content: space-between;
         }
 
-        @include mixins.responsive(lg) {
-            height: 400px
-        }
     }
+
 
 }
 
@@ -145,9 +135,26 @@
     &-header {
         margin-left: 5rem;
 
+
         @include mixins.responsive(xs) {
             margin-left: 1rem;
         }
+    }
+
+    & .service-line {
+        width: 180px;
+
+
+        @include mixins.responsive(xs) {
+            width: 140px;
+        }
+    }
+
+    & img {
+        @include mixins.responsive(xs) {
+            height: 200px;
+        }
+
     }
 
     @extend .object-rm;

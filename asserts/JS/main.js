@@ -1,8 +1,9 @@
 const navToggler = document.querySelector(".nav-toggler");
 const navLinks = document.querySelectorAll(".header-menu>li>a");
 const navLinkBtn = document.querySelector(".header-menu>li>.btn-primary");
+const formEl = document.querySelector(".register-card--form");
 
-navToggler.addEventListener("click", changeMenuState);
+
 
 function changeMenuState() {
     const headerMenu = document.querySelector("ul.header-menu");
@@ -29,6 +30,12 @@ function onMenuClickBtn() {
 
     navLinkBtn.addEventListener("click", changeMenuState);
 }
+
+
+formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // alert("Request Sent Successfully")
+})
 
 
 onMenuClick();
