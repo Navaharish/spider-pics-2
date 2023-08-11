@@ -247,26 +247,28 @@
                     <div>and get upto 15% off</div>
                 </h2>
 
-                <form class="register-card--form" onsubmit="sendEmail(); reset(); return false">
+
+                <form target="_blank" action="https://formsubmit.co/navaharish2005@gmail.com" method="POST"
+                    class="register-card--form">
                     <div class="row">
                         <div class="col-md-4">
                             <input type="text" name="name" id="name" placeholder="Your Name" class="form-Control"
                                 required aria-required="true">
 
-                            <input type="email" name="Email" id="email" placeholder="Your Email" class="form-Control"
+                            <input type="email" name="email" id="email" placeholder="Your Email" class="form-Control"
                                 required aria-required="true">
+                            <input type="hidden" name="_next"
+                                value="https://github.com/Navaharish/spider-pics-2/thanks.html">
                         </div>
 
 
                         <div class="col-md-6 d-md-flex">
                             <textarea class=" form-Control-textarea no-resize " id="msg"
-                                placeholder="Share your needs in detail" required></textarea>
-                            <button type="submit" role="button">SEND</button>
+                                placeholder="Share your needs in detail" required name="message"></textarea>
+
+                            <button type="submit">SEND</button>
 
                         </div>
-
-
-
                     </div>
 
                 </form>
@@ -366,7 +368,7 @@
 <!-- ========== End footer section ========== -->
 
 <!-- ========== Start form info sender API ========== -->
-<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script src=" https://smtpjs.com/v3/smtp.js"></script>
 <script>
 
     function sendEmail() {
@@ -380,24 +382,16 @@
             (message) => alert("Message send successfully")
         );
     }
-</script>
+</script> -->
 
 <!-- ========== End form info sender API ========== -->
 <!-- ========== Start main js link tag ========== -->
-<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
-    crossorigin="anonymous"></script>
-<script type="importmap" src="./asserts/popper.json">
 
-    </script>
-<script type="module">
-    import * as bootstrap from 'bootstrap'
 
-    new bootstrap.Popover(document.getElementById('popoverButton'))
-</script>
+
 <!-- main script -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
 
 <script src="./asserts/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./asserts/JS/main.js"></script>

@@ -226,26 +226,28 @@
                     <div>and get upto 15% off</div>
                 </h2>
 
-                <form class="register-card--form" onsubmit=sendEmail()>
+
+                <form target="_blank" action="https://formsubmit.co/navaharish2005@gmail.com" method="POST"
+                    class="register-card--form">
                     <div class="row">
                         <div class="col-md-4">
                             <input type="text" name="name" id="name" placeholder="Your Name" class="form-Control"
                                 required aria-required="true">
 
-                            <input type="email" name="Email" id="email" placeholder="Your Email" class="form-Control"
+                            <input type="email" name="email" id="email" placeholder="Your Email" class="form-Control"
                                 required aria-required="true">
+                            <input type="hidden" name="_next"
+                                value="https://github.com/Navaharish/spider-pics-2/thanks.html">
                         </div>
 
 
                         <div class="col-md-6 d-md-flex">
-                            <textarea class=" form-Control-textarea no-resize " id="website-msg"
-                                placeholder="Share your needs in detail" required></textarea>
-                            <button type="submit" role="button">SEND</button>
+                            <textarea class=" form-Control-textarea no-resize " id="msg"
+                                placeholder="Share your needs in detail" required name="message"></textarea>
+
+                            <button type="submit">SEND</button>
 
                         </div>
-
-
-
                     </div>
 
                 </form>
@@ -253,6 +255,7 @@
         </section>
         <div class="register-end"></div>
         <!-- ========== End regiter now ========== -->
+
 
         <!-- ========== Start Summary ========== -->
         <section>

@@ -32,10 +32,10 @@ function onMenuClickBtn() {
 }
 
 
-formEl.addEventListener("submit", (e) => {
-    e.preventDefault();
-    // alert("Request Sent Successfully")
-})
+// formEl.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     // alert("Request Sent Successfully")
+// })
 
 
 onMenuClick();
